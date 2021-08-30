@@ -97,9 +97,9 @@ export class PVP
         this.target = undefined;
 
         const pathfinder: Pathfinder = this.bot.pathfinder;
-        // @ts-expect-error Not in typescript definition, yet.
         pathfinder.setGoal(null);
 
+        // @ts-expect-error Not in typescript definition, yet.
         this.bot.emit('stoppedAttacking');
     }
 
