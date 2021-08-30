@@ -78,7 +78,6 @@ export class PVP
 
         if (!this.target) return;
 
-        // @ts-expect-error
         const pathfinder: Pathfinder = this.bot.pathfinder;
         if (this.movements) pathfinder.setMovements(this.movements);
 
@@ -97,12 +96,10 @@ export class PVP
 
         this.target = undefined;
 
-        // @ts-expect-error
         const pathfinder: Pathfinder = this.bot.pathfinder;
         // @ts-expect-error Not in typescript definition, yet.
         pathfinder.setGoal(null);
 
-        // @ts-expect-error
         this.bot.emit('stoppedAttacking');
     }
 
