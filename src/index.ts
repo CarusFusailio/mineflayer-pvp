@@ -1,7 +1,7 @@
 import { Bot } from "mineflayer";
 import { PVP } from "./PVP";
 
-export function plugin(bot: Bot)
+export function pvp(bot: Bot)
 {
     const pvp = new PVP(bot);
 
